@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="Styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
+    <title>Products Details </title>
+</head>
+<body>
+        <div class="container">
+ <!--header |càd menu + logo----------------->
+ <header class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="ImageseCom/logofitshop-removebg-preview.png" alt="logo of myStore"></a>
+    </div>
+
+    <nav>
+        <ul id="menuItems">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="product.html">Produit</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+
+        </ul>
+        <a href="cart.html"><img src="ImageseCom/cart.png" alt="panier d'achat" width="30px" height="30px"></a>
+        <img src="ImageseCom/menu.png" class="menu-icon" alt="barre de menu " onclick="menutoggle()">
+    </nav>
+</header>
+     </div>
+
+<!--  account page  ------------------>
+
+     <section class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="ImageseCom/image1.png" width="100%" alt="banner image">
+                </div>
+                <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="Indicator">
+                            </div>
+                            <form id="LoginForm">
+                                <input type="text" placeholder="username">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="" class="pswrd">Forgot password</a>
+                            </form>
+                            <form id="RegisterForm">
+                                <input type="text" placeholder="username">
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--footer----------------->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download Our App for Android and ios mobile phone. </p>
+                <div class="app-logo">
+                    <img src="ImageseCom/play-store.png" alt="play store icone">
+                    <img src="ImageseCom/app-store.png" alt="app store icone ">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="ImageseCom/logofitshop.PNG" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rerum quis distinctio est repudiandae, at harum voluptatibus explicabo. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4" id="contact">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 </p>
+    </div>
+</section>
+
+<!--  js for toggle menu   ---------->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuItems.style.maxHeight =="0px")
+                {
+                    menuItems.style.maxHeight = "200px";
+
+                }
+            else 
+                {     
+                    menuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+ <!-- js for toggle form ------------>
+
+    <script>
+        var LoginForm = document.getElementById( "LoginForm") ;
+        var RegisterForm = document.getElementById ("RegisterForm") ;
+        var Indicator = document.getElementById ("Indicator") ;
+
+            function register(){
+                RegisterForm.style.transform ="translateX(0px)";
+                LoginForm.style.transform ="translateX(0px)";
+                Indicator.style.transform ="translateX(100px)";
+
+
+            }
+
+            function login(){
+                RegisterForm.style.transform ="translateX(300px)";
+                LoginForm.style.transform ="translateX(300px)";
+                Indicator.style.transform ="translateX(0px)";
+
+            }
+    </script>
+
+</body>
+</html>
