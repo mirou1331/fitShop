@@ -558,7 +558,7 @@ form .pswrd{
 
 }
 /****************** Responsivity for tablette *************/
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1140px){
 
 
     .container h1{
@@ -613,7 +613,7 @@ form .pswrd{
     
 /**** responsivity for smartphone ******************/
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 900px){
     .img-menu 
      {
         display: flex; /* Ajoutez cette ligne pour définir ces éléments comme des conteneurs flex */
@@ -671,11 +671,11 @@ form .pswrd{
         width: 280px;
     }
 }
-/*@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px){
 
     .logo img {
         margin-left: -120px;
         margin-right: 98px;
     }
 
-}*/
+}
