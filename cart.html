@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="Styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
+    <title>Products Details </title>
+</head>
+<body>
+        <div class="container">
+ <!--header |càd menu + logo----------------->
+                <header class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="ImageseCom/logofitshop-removebg-preview.png" alt="logo of myStore"></a>
+                    </div>
+
+                    <nav>
+                        <ul id="menuItems">
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="product.html">Produit</a></li>
+                            <li><a href="#apropos">A propos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+
+                        </ul>
+                        <a href="cart.html"><img src="ImageseCom/cart.png" alt="panier d'achat" width="30px" height="30px"></a>
+                        <img src="ImageseCom/menu.png" class="menu-icon" alt="barre de menu " onclick="menutoggle()">
+                    </nav>
+                </header>
+     </div>
+<!---cart items details -->
+     <section class="container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>SubTotale</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="ImageseCom/buy-1.jpg" alt="t-shirt">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price : $50.00</small>
+                            <br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$ 50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="ImageseCom/buy-2.jpg" alt="basket">
+                        <div>
+                            <p>Basket</p>
+                            <small>Price : $59.00</small>
+                            <br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$ 59.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="ImageseCom/buy-3.jpg" alt="pntalon">
+                        <div>
+                            <p>Pontalon</p>
+                            <small>Price : $79.00</small>
+                            <br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$ 79.00</td>
+            </tr>
+        </table>
+        <div class="totale-price">
+            <table>
+                <tr>
+                    <td>SubTotale</td>
+                    <td>$ 200.00</td>
+                 </tr>
+                 <tr>
+                    <td>Tax</td>
+                    <td>$ 35.00</td>
+                 </tr>
+                 <tr>
+                    <td>SubTotale</td>
+                    <td>$ 235.00</td>
+                 </tr>
+            </table>
+        </div>
+     </section>
+<!--footer----------------->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download Our App for Android and ios mobile phone. </p>
+                <div class="app-logo">
+                    <img src="ImageseCom/play-store.png" alt="play store icone">
+                    <img src="ImageseCom/app-store.png" alt="app store icone ">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="ImageseCom/logofitshop.PNG" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rerum quis distinctio est repudiandae, at harum voluptatibus explicabo. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4" id="contact">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 </p>
+    </div>
+</section>
+
+<!--  js for toggle menu   ---------->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuItems.style.maxHeight =="0px")
+                {
+                    menuItems.style.maxHeight = "200px";
+
+                }
+            else 
+                {     
+                    menuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+
+</body>
+</html>

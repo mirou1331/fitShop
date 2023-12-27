@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="Styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
+    <title>myStore</title>
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+ <!--header |càd menu + logo----------------->
+            <header class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="ImageseCom/logofitshop-removebg-preview.png" alt="logo of myStore"></a>
+                </div>
+        
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="product.html">Produit</a></li>
+                        <li><a href="#apropos">A propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    
+                  </ul>
+                  <a href="cart.html"><img src="ImageseCom/cart.png" alt="panier d'achat" width="25px" height="25px"></a></li>
+
+                  <img src="ImageseCom/menu.png" class="menu-icon" alt="barre de menu " onclick="menutoggle()">
+                
+            </nav>
+            </header>
+<!--espace articles |càd Banner ----------------->
+        
+            <div class="row" id="apropos">
+                <div class="col-2"> 
+                    <h1>Donnez à votre entrainement <br> un nouveau style! </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis recusandae sapiente cumque, maxime labore fugit!</p>
+                    <a href="#"> Explorer &#8594;</a> <!--&#8594; = le code d une fleche vers la droite -->
+                </div>
+                <div class="col-2">
+                    <img class="img1" src="ImageseCom/image1.png" alt="image de banner">
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!--section des categories ------------------->
+    <section class="categories">
+        <div class="container">
+            <h2 class="title">Top Categories</h2>
+            <hr class="acceuil">
+            <div class="row">
+                <div class="col-3">
+                    <img src="ImageseCom/category-1.jpg" alt="" >
+                </div>
+                <div class="col-3">
+                    <img src="ImageseCom/category-2.jpg" alt="" >
+                </div>
+                <div class="col-3">
+                    <img src="ImageseCom/category-3.jpg" alt="" >
+                </div>
+            </div>
+        </div>
+    </section>
+<!--section de produits ---------------->
+    <section class="features-products">
+        <div class="container">
+            <h2 class="title">Top Products</h2>
+            <hr class="acceuil">
+            <div class="row">
+                <div class="col-4">
+                    <img src="ImageseCom/product-1.jpg" alt="produit1">
+                    <h3>T-Shirt Rouge </h3>
+                    <div class="rating">
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                       <i class="fa fa-star-o" aria-hidden="true"></i>   
+                     </div>
+                    <p>$ 50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="ImageseCom/product-2.jpg" alt="produit2">
+                    <h3>bascket Noir </h3>
+                    <div class="rating">
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>   
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                    </div>
+                    <p>$ 50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="ImageseCom/product-3.jpg" alt="produit3">
+                    <h3>Pontalon </h3>
+                    <div class="rating">
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o"  aria-hidden="true"></i>
+                        <i class="fa fa-star-o"  aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>   
+                        <i class="fa fa-star-o" aria-hidden="true"></i>   
+                     </div>
+                     <p>$ 50.00</p>
+                    </div>
+                <div class="col-4">
+                    <img src="ImageseCom/product-4.jpg" alt="produit4">
+                    <h3>T-Shirt Puma</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star"  aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                        <i class="fa fa-star-o" aria-hidden="true"></i>   
+                        <i class="fa fa-star-o" aria-hidden="true"></i>   
+                     </div>
+                     <p>$ 50.00</p>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+<!--derniers produits ---------------->
+<section class="features-products">
+    <div class="container">
+        <h2 class="title">Last Products</h2>
+        <hr class="acceuil">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="ImageseCom/product-5.jpg" alt="produit5">
+                <h3>bascket Gris </h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                   <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <p>$ 50.00</p>
+                </div>
+            <div class="col-4">
+                <img src="ImageseCom/product-6.jpg" alt="produit6">
+                <h3>T-shirt puma </h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>   
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                </div>
+                <p>$ 50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="ImageseCom/product-7.jpg" alt="produit7">
+                <h3>Chaussettes </h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"  aria-hidden="true"></i>
+                    <i class="fa fa-star-o"  aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <p>$ 50.00</p>
+                </div>
+            <div class="col-4">
+                <img src="ImageseCom/product-8.jpg" alt="produit8">
+                <h3>Montre</h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <p>$ 50.00</p>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="ImageseCom/product-9.jpg" alt="produit5">
+                <h3>Montre </h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                   <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <p>$ 50.00</p>
+                </div>
+            <div class="col-4">
+                <img src="ImageseCom/product-10.jpg" alt="produit6">
+                <h3>bascket Noir </h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>   
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                </div>
+                <p>$ 50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="ImageseCom/product-11.jpg" alt="produit7">
+                <h3>Adidas </h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"  aria-hidden="true"></i>
+                    <i class="fa fa-star-o"  aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <p>$ 50.00</p>
+                </div>
+            <div class="col-4">
+                <img src="ImageseCom/product-12.jpg" alt="produit8">
+                <h3>Pontalon Nike</h3>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <p>$ 50.00</p>
+                </div>
+        </div>
+
+    </div>
+</section>
+<!--offer------------------------->
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="ImageseCom/exclusive.png" class="offer-img" alt="image d'offre"/>
+                </div>
+                <div class="col-2">
+                    <p>Exclisively available on RedStore</p>
+                    <h1>Smart Band 4</h1>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quaerat, ullam veritatis delectus illo autem inventore libero saepe.<br></small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--testimonial------------>
+<section class="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"  aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aspernatur!</p>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <img src="ImageseCom/user-1.png" alt="user1">
+                 <h3>Sean Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"  aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, optio!</p>          
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <img src="ImageseCom/user-2.png" alt="user2">
+                 <h3>Mike smith </h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"  aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, optio.</p>
+                <div class="rating">
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star"  aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i> 
+                    <i class="fa fa-star-o" aria-hidden="true"></i>   
+                 </div>
+                 <img src="ImageseCom/user-3.png" alt="user3">
+                 <h3>Mabel Joe</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!--brands -------------------->
+<section class="brands">
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <img src="ImageseCom/logo-godrej.png" alt="logo of gorjes marque ">
+            </div>
+            <div class="col-5">
+                <img src="ImageseCom/logo-oppo.png" alt="logo of oppo marque ">
+            </div>
+            <div class="col-5">
+                <img src="ImageseCom/logo-coca-cola.png" alt="logo of coca marque ">
+            </div>
+            <div class="col-5">
+                <img src="ImageseCom/logo-paypal.png" alt="logo of paypal marque ">
+            </div>
+            <div class="col-5">
+                <img src="ImageseCom/logo-philips.png" alt="logo of philips marque ">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer----------------->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download Our App for Android and ios mobile phone. </p>
+                <div class="app-logo">
+                    <img src="ImageseCom/play-store.png" alt="play store icone">
+                    <img src="ImageseCom/app-store.png" alt="app store icone ">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="ImageseCom/logofitshop.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rerum quis distinctio est repudiandae, at harum voluptatibus explicabo. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4" id="contact">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 </p>
+    </div>
+</section>
+
+<!--  js for toggle menu   ---------->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuItems.style.maxHeight =="0px")
+                {
+                    menuItems.style.maxHeight = "200px";
+
+                }
+            else 
+                {     
+                    menuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>
