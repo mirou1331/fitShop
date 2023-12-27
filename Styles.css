@@ -671,3 +671,11 @@ form .pswrd{
         width: 280px;
     }
 }
+@media only screen and (max-width: 400px){
+
+    .logo img {
+        margin-left: -120px;
+        margin-right: 98px;
+    }
+
+}
