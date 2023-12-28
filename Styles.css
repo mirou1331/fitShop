@@ -61,6 +61,8 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 .container{
+    
+    text-align: center;
     max-width: 1200px;
     margin:20px auto;
     padding-left: 25px ;
@@ -558,11 +560,12 @@ form .pswrd{
 
 }
 /****************** Responsivity for tablette *************/
-@media only screen and (max-width: 1140px){
+@media only screen and (max-width: 900px){
 
 
     .container h1{
         font-size: 40px;
+
     }
 
     
@@ -574,7 +577,7 @@ form .pswrd{
         background-position: cover;
         width: 100%;
         overflow: hidden;
-        transition:  max-height 0.5s;;
+        transition:  max-height 0.5s;
     }
 
     nav ul li {
@@ -601,6 +604,17 @@ form .pswrd{
         margin: 0 -20px ;
         
     }
+/*    .img-menu 
+    {
+       display: flex; /* Ajoutez cette ligne pour définir ces éléments comme des conteneurs flex */
+      /* flex-direction: column; /* Pour forcer les éléments à s'afficher en colonne */
+     /*  align-items: stretch; /* Pour étirer les éléments sur toute la largeur 
+
+   }
+   .logo img {
+    margin-left: -120px;
+    margin-right: 180px;
+}*/
 
 }
 @media only screen and (max-width: 1000px){
@@ -614,13 +628,7 @@ form .pswrd{
 /**** responsivity for smartphone ******************/
 
 @media only screen and (max-width: 900px){
-    .img-menu 
-     {
-        display: flex; /* Ajoutez cette ligne pour définir ces éléments comme des conteneurs flex */
-        flex-direction: column; /* Pour forcer les éléments à s'afficher en colonne */
-        align-items: stretch; /* Pour étirer les éléments sur toute la largeur */
 
-    }
 
     .col-2 .img1{
           display: none;   
@@ -637,10 +645,7 @@ form .pswrd{
  
 
    
-   .logo img {
-        margin-left: -120px;
-        margin-right: 180px;
-    }
+ 
 
     .row{
         text-align: center;
